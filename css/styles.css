@@ -45,7 +45,6 @@ thead th:nth-child(3) {
   background-color: #DDC9B4;
   width: 20%; }
 
-/* Barra de navegación */
 .header {
   background: linear-gradient(#474973, #A69CAC);
   display: flex;
@@ -53,6 +52,7 @@ thead th:nth-child(3) {
   align-self: center;
   padding: 20px; }
 
+/* Barra de navegación */
 .header__logo {
   text-align: left;
   text-decoration: none; }
@@ -73,12 +73,12 @@ nav ul {
 
 nav ul li a:hover {
   background-color: snow;
-  color: slateblue;
+  color: #615f70;
   transition: background-color 0.75s;
   border-radius: 15%; }
 
 nav ul li:hover {
-  background-color: slateblue;
+  background-color: #615f70;
   border-radius: 15%;
   transition: background-color 0.75s; }
 
@@ -91,7 +91,7 @@ ul ul {
   list-style: none;
   position: absolute;
   display: none;
-  background-color: slateblue;
+  background-color: #615f70;
   font-size: 0; }
 
 /* Titulos e imágenes*/
@@ -101,21 +101,15 @@ ul ul {
   padding: 10px; }
 
 .sect__h2 {
-  color: #b55d2a;
+  color: #cf3d9f;
   text-align: center;
   letter-spacing: 3px;
   font-size: 20px;
   font-style: italic;
   padding: 15px; }
 
-h1, h2 {
-  color: #423270;
-  text-align: center;
-  font-size: 35px;
-  padding: 15px; }
-
 h2 {
-  color: #b55d2a;
+  color: #cf3d9f;
   letter-spacing: 3px;
   font-size: 20px;
   font-style: italic; }
