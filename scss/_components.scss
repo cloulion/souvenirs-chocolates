@@ -1,0 +1,86 @@
+/* Carrusel */
+
+.carousel-img{
+    @include imageSizes;
+    object-fit: cover;
+}
+
+.carousel-img__title{
+    color: #DDC9B4;
+    text-shadow: 
+    2px 2px 0 #000,
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;;
+}
+
+/* Tabla */
+
+.tab {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 20px;
+}
+
+th, td {
+    padding: 1em;
+    text-align: center;
+}
+
+/* Formulario */
+
+.form-title{
+    text-align: left;
+    margin-left: 4em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+form label{
+    font-weight: bold;
+}
+
+/*Botones redes sociales*/
+
+.social{
+    position: fixed;
+	left: 0; 
+	top: 200px;
+	z-index: 2000;
+    ul{
+        list-style: none;
+        float: left;
+        li a{
+            display: inline-block;
+            color:#fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 10%;
+        }
+    }
+} 
+
+.social ul li a:hover{
+    padding: 15px 20px;
+    transition: all 0.5s ease-in-out;
+}
+/**********************/
+@keyframes showIn {
+    0%{
+        z-index: 1;
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100%{
+        z-index: 1;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.showIn{
+    animation: 700ms showIn ease-in-out;
+    animation-fill-mode: forwards;
+}

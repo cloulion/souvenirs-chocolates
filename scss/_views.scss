@@ -1,0 +1,45 @@
+/*Media Queries*/
+
+@media (min-width: 768px){
+    .grid-gallery{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .grid-card:nth-child(6) {
+        grid-column-start: span 2;
+    }
+    .carousel-img {
+        width: 75%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1024px){
+    .grid-gallery{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .carousel-img{
+        width: 60%;
+        height: 110vh;
+        object-fit: cover;
+    }
+}
+
+/*Ponemos el texto bajo la imagen al achicar pantalla*/
+@media (max-width: 480px){
+    .block-item {
+    grid-template-areas:
+        "title"
+        "img"
+        "paragraph" !important;
+    grid-template-columns: 1fr !important;
+    }
+}
+
+/*Media para esconder el texto al achicar pantalla*/
+@media (max-width: 482px){
+    .grid-title{
+        display: none;
+    }
+}

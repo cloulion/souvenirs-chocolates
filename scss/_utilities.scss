@@ -1,0 +1,57 @@
+$backgroundMainColor: linear-gradient(#474973,#A69CAC);
+$h2Color: #b55d2a;
+$h1Color: #423270;  
+$navButtons: slateblue;
+$tabWidth: 100%;
+$header: true;
+$socialColors: (
+    fb: royalblue,
+    ig: salmon,
+    yt: red
+);
+
+@each $red, $color in $socialColors {
+    .icon-#{$red}{
+        background-color: $color;
+        font-size: 25px;
+    }
+}
+
+@mixin imageSizes{
+    width: 100%;
+    height: 100;
+}
+
+@mixin tabFormat {
+    font-style: italic;
+    font-size: 23px;
+    color: white;
+    background-color: #DDC9B4;
+}
+
+thead th:nth-child(1) {
+    @include tabFormat;
+    width: $tabWidth - 80%
+}
+
+thead th:nth-child(2) {
+    @include tabFormat;
+    width: $tabWidth - 50%
+}
+
+thead th:nth-child(3) {
+    @include tabFormat;
+    width: $tabWidth - 80%
+}
+
+.header{
+    background: $backgroundMainColor;
+    @if $header == true {
+        display: flex;
+    }@else{
+        display: none;
+    }
+    justify-content: space-between;
+    align-self: center;
+    padding: 20px;   
+}
